@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainGeneradorNFT</class>
+    <widget class="QMainWindow" name="MainGeneradorNFT">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>932</width>
+                <height>710</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QLabel" name="label">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>1461</width>
+                        <height>711</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">background-image: url(:/images/background-image-nft.jpg);</string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+            </widget>
+            <widget class="QGroupBox" name="grpDatos_2">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>190</y>
+                        <width>551</width>
+                        <height>511</height>
+                    </rect>
+                </property>
+                <property name="palette">
+                    <palette>
+                        <active>
+                            <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                    <color alpha="255">
+                                        <red>255</red>
+                                        <green>255</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </brush>
+                            </colorrole>
+                        </active>
+                        <inactive>
+                            <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                    <color alpha="255">
+                                        <red>255</red>
+                                        <green>255</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </brush>
+                            </colorrole>
+                        </inactive>
+                        <disabled>
+                            <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                    <color alpha="255">
+                                        <red>120</red>
+                                        <green>120</green>
+                                        <blue>120</blue>
+                                    </color>
+                                </brush>
+                            </colorrole>
+                        </disabled>
+                    </palette>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>12</pointsize>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>Lista del NFTs</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <widget class="QTableWidget" name="tblNFT">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>20</y>
+                            <width>531</width>
+                            <height>481</height>
+                        </rect>
+                    </property>
+                    <column>
+                        <property name="text">
+                            <string>Id</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Nombre del NFT</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>New Column</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Ancho</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Imagen</string>
+                        </property>
+                    </column>
+                </widget>
+            </widget>
+            <widget class="QGroupBox" name="grpDatos_3">
+                <property name="geometry">
+                    <rect>
+                        <x>560</x>
+                        <y>190</y>
+                        <width>361</width>
+                        <height>511</height>
+                    </rect>
+                </property>
+                <property name="palette">
+                    <palette>
+                        <active>
+                            <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                    <color alpha="255">
+                                        <red>255</red>
+                                        <green>255</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </brush>
+                            </colorrole>
+                        </active>
+                        <inactive>
+                            <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                    <color alpha="255">
+                                        <red>255</red>
+                                        <green>255</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </brush>
+                            </colorrole>
+                        </inactive>
+                        <disabled>
+                            <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                    <color alpha="255">
+                                        <red>120</red>
+                                        <green>120</green>
+                                        <blue>120</blue>
+                                    </color>
+                                </brush>
+                            </colorrole>
+                        </disabled>
+                    </palette>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>12</pointsize>
+                    </font>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true"/>
+                </property>
+                <property name="title">
+                    <string>NFT Generado</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                </property>
+                <widget class="QLabel" name="lblImage">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>20</y>
+                            <width>341</width>
+                            <height>481</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string/>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QTabWidget" name="tabWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>941</width>
+                        <height>191</height>
+                    </rect>
+                </property>
+                <property name="contextMenuPolicy">
+                    <enum>Qt::DefaultContextMenu</enum>
+                </property>
+                <property name="currentIndex">
+                    <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab">
+                    <attribute name="title">
+                        <string>Individual</string>
+                    </attribute>
+                    <widget class="QGroupBox" name="grpDatos">
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>0</y>
+                                <width>921</width>
+                                <height>161</height>
+                            </rect>
+                        </property>
+                        <property name="palette">
+                            <palette>
+                                <active>
+                                    <colorrole role="WindowText">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                    <colorrole role="Text">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                    <colorrole role="ButtonText">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                </active>
+                                <inactive>
+                                    <colorrole role="WindowText">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                    <colorrole role="Text">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                    <colorrole role="ButtonText">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                </inactive>
+                                <disabled>
+                                    <colorrole role="WindowText">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                    <colorrole role="Text">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                    <colorrole role="ButtonText">
+                                        <brush brushstyle="SolidPattern">
+                                            <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </brush>
+                                    </colorrole>
+                                </disabled>
+                            </palette>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <pointsize>12</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">color: rgb(0, 0, 0);</string>
+                        </property>
+                        <property name="title">
+                            <string>Datos del NFT</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <widget class="QLabel" name="label_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>360</x>
+                                    <y>30</y>
+                                    <width>81</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Ancho:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>30</y>
+                                    <width>151</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Nombre del NFT:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" name="txtNombreNFT">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>50</y>
+                                    <width>331</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" name="txtAncho">
+                            <property name="geometry">
+                                <rect>
+                                    <x>360</x>
+                                    <y>50</y>
+                                    <width>81</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" name="txtAlto">
+                            <property name="geometry">
+                                <rect>
+                                    <x>450</x>
+                                    <y>50</y>
+                                    <width>81</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>450</x>
+                                    <y>30</y>
+                                    <width>81</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Alto:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_7">
+                            <property name="geometry">
+                                <rect>
+                                    <x>540</x>
+                                    <y>30</y>
+                                    <width>101</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Espaciado Interno:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" name="txtEspaciadoInterno">
+                            <property name="geometry">
+                                <rect>
+                                    <x>540</x>
+                                    <y>50</y>
+                                    <width>111</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_8">
+                            <property name="geometry">
+                                <rect>
+                                    <x>660</x>
+                                    <y>30</y>
+                                    <width>101</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Números de Líneas:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" name="txtNumeroLineas">
+                            <property name="geometry">
+                                <rect>
+                                    <x>660</x>
+                                    <y>50</y>
+                                    <width>111</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QSlider" name="sldRed">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>120</y>
+                                    <width>160</width>
+                                    <height>22</height>
+                                </rect>
+                            </property>
+                            <property name="maximum">
+                                <number>255</number>
+                            </property>
+                            <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_9">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>80</y>
+                                    <width>151</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Color (RGB):</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_10">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>100</y>
+                                    <width>161</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Rojo (Red)</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_11">
+                            <property name="geometry">
+                                <rect>
+                                    <x>200</x>
+                                    <y>100</y>
+                                    <width>161</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Verde (Green)</string>
+                            </property>
+                        </widget>
+                        <widget class="QSlider" name="sldGreen">
+                            <property name="geometry">
+                                <rect>
+                                    <x>200</x>
+                                    <y>120</y>
+                                    <width>160</width>
+                                    <height>22</height>
+                                </rect>
+                            </property>
+                            <property name="maximum">
+                                <number>255</number>
+                            </property>
+                            <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_12">
+                            <property name="geometry">
+                                <rect>
+                                    <x>380</x>
+                                    <y>100</y>
+                                    <width>161</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Azul (Blue)</string>
+                            </property>
+                        </widget>
+                        <widget class="QSlider" name="sldBlue">
+                            <property name="geometry">
+                                <rect>
+                                    <x>380</x>
+                                    <y>120</y>
+                                    <width>160</width>
+                                    <height>22</height>
+                                </rect>
+                            </property>
+                            <property name="maximum">
+                                <number>255</number>
+                            </property>
+                            <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="RegistrarNFT">
+                            <property name="geometry">
+                                <rect>
+                                    <x>630</x>
+                                    <y>120</y>
+                                    <width>131</width>
+                                    <height>23</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Registrar</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="btnGenerarNFT">
+                            <property name="geometry">
+                                <rect>
+                                    <x>770</x>
+                                    <y>120</y>
+                                    <width>131</width>
+                                    <height>23</height>
+                                </rect>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>8</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Generar</string>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="tab_2">
+                    <attribute name="title">
+                        <string>Masiva</string>
+                    </attribute>
+                    <widget class="QLineEdit" name="txtCantidadNFTs">
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>40</y>
+                                <width>101</width>
+                                <height>21</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="label_13">
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>20</y>
+                                <width>151</width>
+                                <height>16</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Cantidad de NFT's:</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="btnGenerarMasivo">
+                        <property name="geometry">
+                            <rect>
+                                <x>130</x>
+                                <y>40</y>
+                                <width>131</width>
+                                <height>23</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <pointsize>8</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>Generar y Registrar</string>
+                        </property>
+                    </widget>
+                </widget>
+            </widget>
+        </widget>
+    </widget>
+    <resources>
+        <include location="../assets/images/resources.qrc"/>
+    </resources>
+    <connections/>
+</ui>

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="images">
+    <file>background-image-nft.jpg</file>
+    <file>nft_background.jpeg</file>
+  </qresource>
+</RCC>
