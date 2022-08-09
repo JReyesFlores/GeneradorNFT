@@ -568,19 +568,37 @@ class Ui_MainGeneradorNFT(object):
                 self.msgBoxDialog('El ancho del NFT es obligatorio.', True)
                 return False
 
+            if int(self.txtAncho.text().strip()) <= 0:
+                self.msgBoxDialog('El ancho del NFT debe ser mayor a 0.', True)
+                return False
+
             if self.txtAlto.text().strip() == '':
                 self.msgBoxDialog('El alto del NFT es obligatorio.', True)
                 return False 
+
+            if int(self.txtAlto.text().strip()) <= 0:
+                self.msgBoxDialog('El alto del NFT debe ser mayor a 0.', True)
+                return False
 
             if self.txtEspaciadoInterno.text().strip() == '':
                 self.msgBoxDialog('El espaciado interno del NFT es obligatorio.', True)
                 return False 
 
+            if int(self.txtEspaciadoInterno.text().strip()) <= 0:
+                self.msgBoxDialog('El espaciado interno del NFT debe ser mayor a 0.', True)
+                return False
+
             if self.txtNumeroLineas.text().strip() == '':
                 self.msgBoxDialog('El Número de líneas del NFT es obligatorio.', True)
                 return False 
 
+            if int(self.txtNumeroLineas.text().strip()) <= 0:
+                self.msgBoxDialog('El número de líneas del NFT debe ser mayor a 0.', True)
+                return False
+
             return True
+        except ValueError:
+            self.msgBoxDialog(f'Formato inválido en datos númericos.', True)
         except Exception as ex:
             self.msgBoxDialog(f'{ex}', True)
 
