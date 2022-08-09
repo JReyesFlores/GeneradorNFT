@@ -104,7 +104,7 @@ class NFTLogic():
         image = Image.new('RGB', (image_width_size_px, image_height_size_px), image_background_color)
         
         # creando las líneas
-        draw = ImageDraw.Draw(image)
+        # draw = ImageDraw.Draw(image)
         # start_position = (0, 0)
         # end_position = (60, 60)
 
